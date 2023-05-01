@@ -1,5 +1,5 @@
 # AlphaLang
-Simple esotric language that is ABSOLUTELY not compact
+Simple esotric language that is ABSOLUTELY annoying
 
 ## How does it work?
 The interpreter reads the .alp files and takes lowercase letters of english alphabet and adds it into variable, then executes a bash command with that text
