@@ -37,3 +37,7 @@ Letters from a to z
 
 ``vel`` - Add vertical line "|"
 
+``sla`` - Add slash "/"
+
+``start`` - Execute bash command
+
