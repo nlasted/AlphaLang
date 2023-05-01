@@ -24,7 +24,6 @@ l
 d
 start
 ```
-
-##Commands
+## Commands
 Letters from a to z
 ``sp`` - Add space
