@@ -83,5 +83,7 @@ for command in pidorcode:
             bash = bash + "|"
         case "and\n":
             bash = bash + "&"
+        case "sla\n":
+            bash = bash +"/"
         case "start\n":
             os.system(bash)
