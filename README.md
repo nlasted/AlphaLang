@@ -1,4 +1,4 @@
-# AlphaLang
+# AlphabetLang
 Simple esotric language that is ABSOLUTELY not compact
 
 ## How does it work?
