@@ -3,7 +3,7 @@
 import sys, colorama
 import os
 
-print(f"{colorama.Fore.YELLOW}Alphabet{colorama.Fore.RESET} interpreter.\nCoded by {colorama.Fore.BLUE}nlasted{colorama.Fore.RESET}");
+print(f"{colorama.Fore.YELLOW}AlphaLang{colorama.Fore.RESET} interpreter.\nCoded by {colorama.Fore.BLUE}nlasted{colorama.Fore.RESET}");
 
 try:
     filename = str(sys.argv[1])
@@ -11,11 +11,12 @@ except:
     print(f"{colorama.Fore.RED}[ERROR] Could not open the file.")
 
 if filename.__contains__("alp") != True:
-    print("Not an alphabet file.")
+    print("Not an alphalang file. (*.alp)")
+    exit()
 
 with open(filename, 'r') as file:
     pidorcode = file.readlines()
-    print(str(len(pidorcode)) + " commands total.\n")
+    print(str(len(pidorcode)) + " lines total.\n")
 
 bash = ""
 
@@ -84,6 +85,6 @@ for command in pidorcode:
         case "and\n":
             bash = bash + "&"
         case "sla\n":
-            bash = bash +"/"
+            bash = bash + "/"
         case "start\n":
             os.system(bash)
