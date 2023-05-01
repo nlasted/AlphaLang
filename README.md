@@ -28,3 +28,8 @@ start
 Letters from a to z
 
 ``sp`` - Add space
+ToDo (in progress):
+``dsh`` - Add dash "-"
+``pnt`` - Add point "."
+``and`` - Add and "&"
+``vel`` - Add vertical line "|"
