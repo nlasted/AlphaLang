@@ -75,5 +75,13 @@ for command in pidorcode:
             bash = bash + "z"
         case "sp\n":
             bash = bash + " "
+        case "dsh\n":
+            bash = bash + "-"
+        case "pnt\n":
+            bash = bash + "."
+        case "vel\n":
+            bash = bash + "|"
+        case "and\n":
+            bash = bash + "&"
         case "start\n":
             os.system(bash)
