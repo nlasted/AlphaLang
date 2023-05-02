@@ -92,3 +92,5 @@ for command in alphacode:
             bash = ""
         case "start\n":
             os.system(bash)
+        case "start":
+            os.system(bash)
