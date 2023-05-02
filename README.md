@@ -41,3 +41,4 @@ Letters from a to z
 
 ``start`` - Execute bash command
 
+``reset`` - Clears the variable
