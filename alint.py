@@ -7,8 +7,9 @@ print(f"{colorama.Fore.YELLOW}AlphaLang{colorama.Fore.RESET} interpreter.\nCoded
 
 try:
     filename = str(sys.argv[1])
+    print(f"\n{colorama.Fore.GREEN}[+]{colorama.Fore.RESET} File read successfully")
 except:
-    print(f"{colorama.Fore.RED}[ERROR] Could not open the file.")
+    print(f"\n{colorama.Fore.RED}[-]{colorama.Fore.RESET} Could not open the file.")
 
 if filename.__contains__("alp") != True:
     print("Not an alphalang file. (*.alp)")
@@ -16,9 +17,10 @@ if filename.__contains__("alp") != True:
 
 with open(filename, 'r') as file:
     pidorcode = file.readlines()
-    print(str(len(pidorcode)) + " lines total.\n")
 
 bash = ""
+
+print(str(len(pidorcode)) + " lines total.\n")
 
 for command in pidorcode:
     match command:
@@ -86,5 +88,7 @@ for command in pidorcode:
             bash = bash + "&"
         case "sla\n":
             bash = bash + "/"
+        case "reset\n":
+            bash = ""
         case "start\n":
             os.system(bash)
